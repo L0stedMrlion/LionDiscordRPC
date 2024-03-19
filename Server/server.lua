@@ -1,4 +1,5 @@
 SetConvarReplicated("sv_maxclients", "true")
+local Config = require('../config')
 
 if Config.Updater then
     PerformHttpRequest("https://raw.githubusercontent.com/L0stedMrlion/versions/master/LionRPC", function(err, Version, headers)

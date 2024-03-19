@@ -1,4 +1,4 @@
-require('Config')
+local Config = require('../config')
 
 if Config.Framework == "ESX" then
     ESX = exports["es_extended"]:getSharedObject()
