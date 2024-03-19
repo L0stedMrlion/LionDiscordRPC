@@ -6,11 +6,11 @@ description "Mrlion's Rich Presence script!"
 version '1.0'
 
 client_script {
-    'client/client.lua'; 
+    'Client/client.lua'; 
   }
   
   server_script {
-    'server/server.lua';
+    'Server/server.lua';
   }
   
   files {

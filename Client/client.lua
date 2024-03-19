@@ -1,3 +1,5 @@
+require('Config')
+
 if Config.Framework == "ESX" then
     ESX = exports["es_extended"]:getSharedObject()
 elseif Config.Framework == "QBCORE" then
@@ -5,8 +7,6 @@ elseif Config.Framework == "QBCORE" then
 else
     print("[ERROR] Yout framework is not valid!")
 end
-
-require('config')
 
 Citizen.CreateThread(function()
     while true do
